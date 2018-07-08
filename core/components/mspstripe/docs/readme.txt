@@ -1,7 +1,7 @@
 --------------------
 mspStripe
 --------------------
-Author: John Doe <john@doe.com>
+Author: Andrej Kopp <admin@sequel.one>
 --------------------
 
-A basic Extra for MODx Revolution.
+Payment method for MiniShop2 (MODX Revolution 2.6.*).
