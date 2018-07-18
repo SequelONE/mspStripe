@@ -18,11 +18,11 @@ return [
     // Which elements should be updated on package upgrade
     'update' => [
         'chunks' => false,
-        'menus' => true,
-        'plugins' => true,
+        'menus' => false,
+        'plugins' => false,
         'resources' => false,
-        'settings' => false,
-        'snippets' => true,
+        'settings' => true,
+        'snippets' => false,
         'templates' => false,
         'widgets' => false,
     ],
