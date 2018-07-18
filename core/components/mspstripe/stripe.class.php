@@ -7,10 +7,10 @@ if (!class_exists('msPaymentInterface')) {
 
 class Stripe extends msPaymentHandler implements msPaymentInterface {
 	public function view() {
-		$tpl = $this->getProperty('cart_tpl', 'scStripeCart');
-		$footerTpl = $this->getProperty('cart_footer_tpl', 'scStripeFooter');
+		$tpl = $this->getProperty('cart_tpl', 'StripeCart');
+		$footerTpl = $this->getProperty('cart_footer_tpl', 'StripeJS');
 		$phs = array(
-			'publishable_key' => addslashes($this->getProperty('publishable_key', 'ENTER YOUR KEY')),
+			'publishable_key' => addslashes($this->getProperty('publishable_key', $modx->getOption('mspstripe_api_pk'))),
 			'method_id' => $this->method->get('id'),
 		);
 		$head = $this->simplecart->getChunk($footerTpl, $phs);

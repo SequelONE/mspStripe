@@ -17,7 +17,7 @@ if ($transport->xpdo) {
 	switch ($options[xPDOTransport::PACKAGE_ACTION]) {
 		case xPDOTransport::ACTION_INSTALL:
 		case xPDOTransport::ACTION_UPGRADE:
-			$miniShop2->addService('payment', 'Stripe', '{core_path}components/mspstripe/payment/stripe.class.php');
+			$miniShop2->addService('payment', 'Stripe', '{core_path}components/mspstripe/stripe.class.php');
 			/** @var msPayment $payment */
 			if (!$payment = $modx->getObject('msPayment', array('class' => 'Stripe'))) {
 				$payment = $modx->newObject('msPayment');
