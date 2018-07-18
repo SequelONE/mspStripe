@@ -8,14 +8,10 @@ if (!$transport->xpdo || !($transport instanceof xPDOTransport)) {
 
 $modx =& $transport->xpdo;
 $packages = [
-    'Ace' => [
-        'version' => '1.6.5-pl',
-        'service_url' => 'modstore.pro',
-    ],
-    'pdoTools' => [
-        'version' => '2.10.0-pl',
-        'service_url' => 'modstore.pro',
-    ],
+	'miniShop2' => [
+		'version' => '2.4.13-pl',
+		'service_url' => 'modstore.pro',
+	],
 ];
 
 $downloadPackage = function ($src, $dst) {
