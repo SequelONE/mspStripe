@@ -22,6 +22,7 @@ return [
         'plugins' => false,
         'resources' => false,
         'settings' => true,
+		'paymethod' => true,
         'snippets' => false,
         'templates' => false,
         'widgets' => false,
